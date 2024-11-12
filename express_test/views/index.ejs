@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <ul class="lista">
+      <% cartelera.forEach((pelicula) => { %>
+        <li> <%= pelicula %> </li>
+      <% }); %> 
+    </ul>
+
+    <div class="login">
+      <a href="/login">
+        <button class="loginButton"> Iniciar Sesión </button>
+      </a>
+    </div>
+  </body>
+</html>

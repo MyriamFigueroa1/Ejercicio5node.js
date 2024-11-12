@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1 class="tituloLogIn"> ¡Bienvenido a Cinepolis! </h1>
+    <div class="loginContainer">
+        <form action="/login" method="POST">
+            <div class="container">
+                <div class="input-login">
+                    <input required type="email" name="email" placeholder="Dirección de e-mail">
+                </div>
+                
+                <div class="input-login">
+                    <input required type="password" name="password" placeholder="Contraseña">
+                </div>
+                
+                <div class="botonInicio">
+                    <button class="loginButton"> Iniciar Sesión </button>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>
